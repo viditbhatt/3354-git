@@ -1,0 +1,9 @@
+a) 7
+b) after the first commit (Step 7)
+c) git status compares users branch with origin/master.
+   git log shows a log of last few commits
+d) unstaged files are files that exist in the repository but are not up to date
+   untracked files are files that do not exist in the respository yet
+e) git checkout will match a file in the working tree to its version in another specified tree
+   git reset resets the index to a previous state
+f) you cannot pull if there are uncommitted changes
