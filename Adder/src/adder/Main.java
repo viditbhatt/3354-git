@@ -19,7 +19,7 @@ public class Main {
     	System.out.println(args[0]);
     	System.out.println(args[1]);
     	
-    	if((args[0].equals('-')))
+    	if((args[0].equals("-")))
     	{
     		for(int i = 1; i < numArgs; i++)
         	{
