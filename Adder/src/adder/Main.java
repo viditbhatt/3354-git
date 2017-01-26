@@ -13,27 +13,14 @@ public class Main {
 
     private static int addArguments(String[] args) {
 
-      	int numArgs = args.length;
-      	int total = 0;
+    	int numArgs = args.length;
+    	int total = 0;
 
-      	System.out.println(args[0]);
-      	System.out.println(args[1]);
+    	for(int i = 0; i < numArgs; i++)
+    	{
+    		total = total + Integer.valueOf(args[i]);
+    	}
 
-      	if((args[0].equals('-')))
-      	{
-      		for(int i = 1; i < numArgs; i++)
-          	{
-          		total = total - Integer.valueOf(args[i]);
-          	}
-      	}
-      	else
-      	{
-      		for(int i = 0; i < numArgs; i++)
-      		{
-      			total = total + Integer.valueOf(args[i]);
-      		}
-      	}
-      	return total;
-      }
-  }
+    	return total;
+    }
 }
