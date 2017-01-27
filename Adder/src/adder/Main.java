@@ -2,13 +2,17 @@ package adder;
 
 public class Main {
 
-    public static void main(String[] args) {
-        try {
+   public static void main(String[] args) {
+        try {        
             int result = addArguments(args);
             System.out.println(result);
-        } catch (Exception e) {
-            System.err.println("Please provide integers to add");
         }
+          catch (NumberFormatException nE) {
+            System.err.println("Please provide integers to add");
+          }
+          catch (IllegalArgumentException e) {
+            System.err.println("List numbers to Add. Precede list with a '-' to Subtract");
+          }
     }
 
   private static int addArguments(String[] args) {
